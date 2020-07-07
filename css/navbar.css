@@ -1,0 +1,77 @@
+nav .logo {
+  margin-left: 10%;
+}
+
+nav {
+  background-color: transparent !important;
+  min-height: 15vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  z-index: 100 !important;
+}
+
+.nav_btn:active,
+.nav_btn:hover {
+  outline: none;
+}
+
+nav a {
+  color: black;
+}
+
+nav a:active,
+nav a:hover {
+  color: black;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.items {
+  cursor: pointer;
+}
+
+/* toggler div */
+
+.togglerDiv {
+  /* transform: translateY(48px); */
+  transform: translateY(-500px);
+  top: 100px;
+  width: 100vw;
+  height: 50vh;
+  left: 0;
+  background-color: white;
+  position: absolute;
+  top: 3rem;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.togglerDiv ul {
+  height: 100%;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+  transition: opacity 1s ease;
+}
+
+/* temp class for toggler */
+
+.tempClass {
+  transform: translateY(48px);
+}

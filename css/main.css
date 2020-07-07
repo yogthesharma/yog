@@ -1,0 +1,13 @@
+@import url("./navbar.css");
+@import url("./mainSection.css");
+@import url("./about.css");
+@import url("./aboutSection.css");
+@import url("./skills.css");
+@import url("./footer.css");
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}

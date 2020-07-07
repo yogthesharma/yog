@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- aos -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Yog Sharma</title>
+  </head>
+  <body>
+    <!-- onscrolling animations -->
+    
+    <!-- ###################nav bar####################### -->
+
+    <!-- <div class="coverDiv" /> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="home">
+      <a class="navbar-brand logo" href="#">@yogthesharma</a>
+      <button
+        class="navbar-toggler nav_btn"
+        id="togglerBtn"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="togglerDiv" id="togglerDiv">
+        <ul><li>
+        <a>Home</a>
+        </li>
+        <li>
+        <a>About</a>
+        </li>
+        <li>
+        <a>Skills</a>
+        </li>
+        <li>
+        <a>Contact</a>
+        </li></ul>
+
+      </div>
+
+      <div class="collapse navbar-collapse links" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link items" onclick={scrollFun()}
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link items" onclick={scrollFunAbt()}>About</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link items" onclick={skillsFun()}>Skills</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link items" onclick={contactFun()}>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ########################main section###################### -->
+    <section class="mainSection container-fluid">
+      <div class="imageDiv">
+        <div class="headerText">
+          <h2>Being <span>Creative</span></h2>
+          <h1>Yog Sharma</h1>
+          <p id="typed">I am a Developer</p>
+
+          <button class="headBtn">Hire Me</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- #########################about section######################## -->
+
+    <section class="aboutSection" id="aboutSection">
+      <div class="heading">
+        <h1>About</h1>
+        <p>
+          I do coding stuff. <br />
+          I dive deep into my imagination for new ideas and designs and then
+          code :) :) <br />
+          Just kidding. I simply code.
+        </p>
+        <button>Contact Me</button>
+      </div>
+    </section>
+
+    <!-- skills section -->
+    <section class="skills" id="skills">
+      <div class="skillsData container-fluid">
+        <h1>What I Code</h1>
+        <div class="skillsShow">
+          <div class="skill ">
+            <h4><i class="fa fa-5x fa-mobile"></i></h4>
+            <p>Responsive Designs</p>
+          </div>
+          <div class="skill ">
+            <h4><i class="fa fa-4x fa-html5"></i></h4>
+            <p>HTML-5</p>
+          </div>
+          <div class="skill ">
+            <h4><i class="fa fa-4x fa-css3"></i></i></h4>
+            <p>CSS-3</p>
+          </div>
+        </div>
+        <div class="skillsShow">
+          <div class="skill ">
+            <h4><i class="fa fa-5x fa-mobile"></i></h4>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill ">
+            <h4><i class="fa fa-5x fa-mobile"></i></h4>
+            <p>React</p>
+          </div>
+          <div class="skill ">
+            <h4><i class="fa fa-5x fa-mobile"></i></h4>
+            <p>Node JS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer contact section -->
+    <footer>
+      <div class="contact" id="contact">
+        <h1>Get In Touch</h1>
+        <div class="realContact">
+          <div class="personalInfo">
+            <ul>
+              <li><strong>Name: </strong>Yog Sharma</li>
+              <li><strong>Age: </strong>20</li>
+              <li><strong>Email: </strong>yogthesharma@gmail.com</li>
+              <li><strong>Maritial Status: </strong>Single</li>
+              <li><strong>Available: </strong>Yes</li>
+            </ul>
+            
+          </div>
+          <div class="msgMe">
+
+            <form>
+              <input placeholder="Messege Me" />
+              
+            </form>
+            <button id ="sendBtnId">Send</button>
+          </div>
+          <div class="profileLinks">
+            <ul>
+              <li><a href="http://www.linkedin.com/in/yogthesharma"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin-square fa-stack-1x fa-inverse"></i></span></a></li>
+              <li><a href="https://github.com/yogthesharma"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></i></a></li>
+              <li><a href="https://stackoverflow.com/users/10891489/yog-sharma"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- Optional JavaScript -->
+
+    
+  <script>
+    const scrollFunHome = () => {
+      var elmntToView = document.getElementById("home");
+      
+      elmntToView.scrollIntoView();
+    }
+    const scrollFunAbt = () => {
+      var elmntToView = document.getElementById("aboutSection");
+      
+      elmntToView.scrollIntoView();
+    }
+    const skillsFun = () => {
+      var elmntToView = document.getElementById("skills");
+      elmntToView.scrollIntoView();
+    }
+    const contactFun = () => {
+      var elmntToView = document.getElementById("contact");
+      elmntToView.scrollIntoView();
+    }
+  </script>
+    <!-- js for typed -->
+    <script src="./js/app.js" />
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
