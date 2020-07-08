@@ -1,5 +1,4 @@
 // importing
-import ScrollReveal from "scrollreveal";
 
 // toggler menu
 

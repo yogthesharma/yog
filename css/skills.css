@@ -59,7 +59,7 @@
 
 /* media queries */
 
-@media screen and (width: 360px) {
+@media screen and (max-width: 560px) {
   .skill {
     min-width: 100%;
   }
