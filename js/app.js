@@ -28,5 +28,5 @@ togglerBtn.addEventListener("click", () => {
 const sendBtn = document.getElementById("sendBtnId");
 
 sendBtn.addEventListener("click", () => {
-  alert();
+  alert("Messege Sent");
 });
